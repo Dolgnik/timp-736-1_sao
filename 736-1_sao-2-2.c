@@ -1,18 +1,19 @@
 #include<stdio.h>
 int main()
 {
-	int num,proz=1,n,n0=0;
+	int num;
+	int count = 0;
+	int n;
 	scanf("%d",&n);
-	if(n0==n)
+	while(n !=0)
 	{
-		proz=0;
-	};
-	while(n0!=n)
-	{	
+		n--;
 		scanf("%d",&num);
-		n0++;
-		proz=proz*(num-n0);
-	};
-	printf("%d\n",proz);
+		if(num > 0)
+		{
+			count +=1;
+		}
+	}
+	printf("%d\n",count);
 	return 0;
 }
